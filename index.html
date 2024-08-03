@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <nav>
+        <div id="Calculator">Calculator</div>
+        <div id="Converter">Converter</div>
+    </nav>
+    <main>
+        <div id="cal">
+            <input type="text" readonly id="display">
+            <div id="calOperators">
+                <div id="keys">
+                    <button onclick="calDisplay('+')">+</button>
+                    <button onclick="calDisplay('-')">-</button>
+                    <button onclick="calDisplay('*')">x</button>
+                    <button onclick="calDisplay('/')">/</button>
+                    <button onclick="calDisplay('.')">.</button>
+                </div>
+                <div id="numInCal">
+                    <div class="numInCal-in">
+                        <button onclick="calDisplay('9')">9</button>
+                        <button onclick="calDisplay('8')">8</button>
+                        <button onclick="calDisplay('7')">7</button>
+                    </div>
+                    <div class="numInCal-in">
+                        <button onclick="calDisplay('6')">6</button>
+                        <button onclick="calDisplay('5')">5</button>
+                        <button onclick="calDisplay('4')">4</button>
+                    </div>
+                    <div class="numInCal-in">
+                        <button onclick="calDisplay('3')">3</button>
+                        <button onclick="calDisplay('2')">2</button>
+                        <button onclick="calDisplay('1')">1</button>
+                    </div>
+                    <div class="numInCal-in">
+                        <button onclick="clearDisplay()">C</button>
+                        <button onclick="calDisplay('0')">0</button>
+                        <button onclick="calValue()" class="unique-btn">=</button>
+                    </div>
+                    <div class="numInCal-in">
+                        <button onclick="minusStr()" class="unique-btn2">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
